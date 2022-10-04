@@ -35,7 +35,7 @@
                 return response.json();
             })
             .then((data) => {
-                console.log(data);
+                console.log(JSON.stringify(data));
                 form.reset();
                 grecaptcha.reset();
                 document.getElementById('mySubmitBtn').disabled = true;
